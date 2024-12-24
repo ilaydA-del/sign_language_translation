@@ -23,7 +23,7 @@ model.add(Dense(32, activation='relu'))
 model.add(Dense(actions.shape[0], activation='softmax'))
 
 model.compile(optimizer='Adam', loss='categorical_crossentropy', metrics=['categorical_accuracy'])
-model.load_weights(r"C:\Users\Pc\Desktop\python\okul\tsl_backend\actionRecognition.h5")
+model.load_weights(r"actionRecognition.h5")
 
 def mediapipe_detection(image, model):
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
