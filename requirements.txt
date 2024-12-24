@@ -8,3 +8,4 @@ opencv_python_headless
 Requests
 uvicorn
 tensorflow
+python-multipart
